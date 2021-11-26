@@ -6,11 +6,20 @@ using System.Threading.Tasks;
 
 namespace Open_Lab_10._00
 {
+    class Book
+    {
+        private int pages;
+        public string title;
+      
+    }
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Čau, tato!");
+            Book LOTR = new Book();
+            LOTR.title = "Madam";
+            Console.WriteLine(LOTR.title);
         }
     }
+    
 }
