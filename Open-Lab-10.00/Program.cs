@@ -6,20 +6,45 @@ using System.Threading.Tasks;
 
 namespace Open_Lab_10._00
 {
-    class Book
+    public class Book
     {
         private int pages;
-        public string title;
-      
+        private string title;
+        private string cathegory;
+        private string author;
+        private int releaseDate;
+
+        public void GetTitle() { title = "Madam"; }
+        public void GetPages() { pages = 85; }
+        public void GetCathegory() { cathegory = "Fanatsy"; }
+        public void GetAuthor() { author = "Hanna Suchá"; }
+        public void GetReleaseDate() { releaseDate = 2019;
+
+            
+        }
+        public void WriteVariables()
+        {
+            Console.WriteLine(title);
+            Console.WriteLine(pages);
+            Console.WriteLine(cathegory);
+            Console.WriteLine(author);
+            Console.WriteLine(releaseDate);
+        }
     }
     class Program
     {
         static void Main(string[] args)
         {
             Book LOTR = new Book();
-            LOTR.title = "Madam";
-            Console.WriteLine(LOTR.title);
+            LOTR.GetTitle();
+            LOTR.GetPages();
+            LOTR.GetCathegory();
+            LOTR.GetAuthor();
+            LOTR.GetReleaseDate();
+            LOTR.WriteVariables();
+            
         }
+        
     }
     
 }
